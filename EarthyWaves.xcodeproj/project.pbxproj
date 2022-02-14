@@ -1,0 +1,955 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9113A4FB27B5D13200D6C748 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A4FA27B5D13200D6C748 /* AppDelegate.swift */; };
+		9113A4FD27B5D13200D6C748 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A4FC27B5D13200D6C748 /* SceneDelegate.swift */; };
+		9113A50427B5D13300D6C748 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9113A50327B5D13300D6C748 /* Assets.xcassets */; };
+		9113A50727B5D13300D6C748 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9113A50527B5D13300D6C748 /* LaunchScreen.storyboard */; };
+		9113A51227B5D13300D6C748 /* EarthyWavesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A51127B5D13300D6C748 /* EarthyWavesTests.swift */; };
+		9113A51C27B5D13300D6C748 /* EarthyWavesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A51B27B5D13300D6C748 /* EarthyWavesUITests.swift */; };
+		9113A51E27B5D13300D6C748 /* EarthyWavesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A51D27B5D13300D6C748 /* EarthyWavesUITestsLaunchTests.swift */; };
+		9113A52D27B5D1CA00D6C748 /* EarthquakesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A52C27B5D1CA00D6C748 /* EarthquakesViewController.swift */; };
+		9113A53227B5D24100D6C748 /* EarthquakesContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A53127B5D24100D6C748 /* EarthquakesContract.swift */; };
+		9113A53427B5D24C00D6C748 /* EarthquakesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A53327B5D24C00D6C748 /* EarthquakesPresenter.swift */; };
+		9113A53627B5D29900D6C748 /* ViewCodeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A53527B5D29900D6C748 /* ViewCodeConfiguration.swift */; };
+		9113A53D27B5D3B100D6C748 /* EarthquakesAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A53C27B5D3B100D6C748 /* EarthquakesAPIProtocol.swift */; };
+		9113A54027B5D41C00D6C748 /* EarthquakesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A53F27B5D41C00D6C748 /* EarthquakesResponse.swift */; };
+		9113A54327B5D46D00D6C748 /* EarthquakesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A54227B5D46D00D6C748 /* EarthquakesRouter.swift */; };
+		9113A54627B5D4C700D6C748 /* EarthquakesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A54527B5D4C700D6C748 /* EarthquakesAPI.swift */; };
+		9113A54827B5D54400D6C748 /* API+Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A54727B5D54400D6C748 /* API+Endpoints.swift */; };
+		9113A54A27B5D58C00D6C748 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A54927B5D58C00D6C748 /* API.swift */; };
+		9113A54E27B5D5F300D6C748 /* InfoPlistHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A54D27B5D5F300D6C748 /* InfoPlistHelper.swift */; };
+		9113A55427B5D66600D6C748 /* Earthquake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A55327B5D66600D6C748 /* Earthquake.swift */; };
+		9113A55727B5D84100D6C748 /* EarthyWaves.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9113A55627B5D84100D6C748 /* EarthyWaves.xcconfig */; };
+		9113A55827B5D84100D6C748 /* EarthyWaves.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9113A55627B5D84100D6C748 /* EarthyWaves.xcconfig */; };
+		9113A55927B5D84100D6C748 /* EarthyWaves.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9113A55627B5D84100D6C748 /* EarthyWaves.xcconfig */; };
+		9113A55B27B5D9C200D6C748 /* DataFaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A55A27B5D9C200D6C748 /* DataFaker.swift */; };
+		9113A55D27B6B6A500D6C748 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A55C27B6B6A500D6C748 /* DateHelper.swift */; };
+		9113A56127B6B75800D6C748 /* URLSessionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A56027B6B75800D6C748 /* URLSessionProvider.swift */; };
+		9113A56727B6B7AB00D6C748 /* EarthquakeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A56627B6B7AB00D6C748 /* EarthquakeService.swift */; };
+		9113A56927B6BA0C00D6C748 /* ProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A56827B6BA0C00D6C748 /* ProviderProtocol.swift */; };
+		9113A56B27B6BA1700D6C748 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A56A27B6BA1700D6C748 /* ServiceProtocol.swift */; };
+		9113A56D27B6BA2500D6C748 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A56C27B6BA2500D6C748 /* URLSessionProtocol.swift */; };
+		9113A56F27B6BA6B00D6C748 /* URLComponentsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A56E27B6BA6B00D6C748 /* URLComponentsExtension.swift */; };
+		9113A57127B6BA8500D6C748 /* URLRequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A57027B6BA8500D6C748 /* URLRequestExtension.swift */; };
+		9113A57327B6BAA100D6C748 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A57227B6BAA100D6C748 /* HTTPMethod.swift */; };
+		9113A57527B6BAA900D6C748 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A57427B6BAA900D6C748 /* NetworkError.swift */; };
+		9113A57727B6BAB100D6C748 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A57627B6BAB100D6C748 /* NetworkResponse.swift */; };
+		9113A57927B6BABE00D6C748 /* ParametersEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A57827B6BABE00D6C748 /* ParametersEncoding.swift */; };
+		9113A57B27B6BAC700D6C748 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A57A27B6BAC700D6C748 /* Task.swift */; };
+		9113A57E27B6D4C900D6C748 /* EarthquakeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A57D27B6D4C900D6C748 /* EarthquakeTableViewCell.swift */; };
+		9113A58127B72E9100D6C748 /* EarthquakeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A58027B72E9100D6C748 /* EarthquakeDetailViewController.swift */; };
+		9113A58327B72EB300D6C748 /* EarthquakeDetailContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A58227B72EB300D6C748 /* EarthquakeDetailContract.swift */; };
+		9113A58527B72EBF00D6C748 /* EarthquakeDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A58427B72EBF00D6C748 /* EarthquakeDetailPresenter.swift */; };
+		9113A58727B89C1A00D6C748 /* EarthquakeTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A58627B89C1A00D6C748 /* EarthquakeTableViewCellTests.swift */; };
+		9113A58927B8C67400D6C748 /* LocalizableStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9113A58827B8C67400D6C748 /* LocalizableStrings.strings */; };
+		9113A58D27B9AED200D6C748 /* EarthquakesAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A53C27B5D3B100D6C748 /* EarthquakesAPIProtocol.swift */; };
+		9113A58E27B9AEF300D6C748 /* EarthquakesMockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A58B27B9AD7A00D6C748 /* EarthquakesMockAPI.swift */; };
+		9113A59227BA126500D6C748 /* EarthquakesMockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A58B27B9AD7A00D6C748 /* EarthquakesMockAPI.swift */; };
+		9113A59327BA127800D6C748 /* Earthquake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A55327B5D66600D6C748 /* Earthquake.swift */; };
+		9113A59427BA127E00D6C748 /* EarthquakesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A53F27B5D41C00D6C748 /* EarthquakesResponse.swift */; };
+		9113A59527BA127E00D6C748 /* EarthquakesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A53F27B5D41C00D6C748 /* EarthquakesResponse.swift */; };
+		9113A59627BA128900D6C748 /* Earthquake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A55327B5D66600D6C748 /* Earthquake.swift */; };
+		9113A59727BA12B000D6C748 /* EarthquakesAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A53C27B5D3B100D6C748 /* EarthquakesAPIProtocol.swift */; };
+		9113A59827BA12B500D6C748 /* DataFaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A55A27B5D9C200D6C748 /* DataFaker.swift */; };
+		9113A59927BA12B800D6C748 /* DataFaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A55A27B5D9C200D6C748 /* DataFaker.swift */; };
+		9113A59A27BA12BD00D6C748 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A55C27B6B6A500D6C748 /* DateHelper.swift */; };
+		9113A59B27BA12BE00D6C748 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A55C27B6B6A500D6C748 /* DateHelper.swift */; };
+		9113A59D27BA135200D6C748 /* EarthquakeTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A58627B89C1A00D6C748 /* EarthquakeTableViewCellTests.swift */; };
+		9113A59E27BA135E00D6C748 /* EarthquakeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A57D27B6D4C900D6C748 /* EarthquakeTableViewCell.swift */; };
+		9113A59F27BA138C00D6C748 /* ViewCodeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A53527B5D29900D6C748 /* ViewCodeConfiguration.swift */; };
+		9113A5A027BA138D00D6C748 /* ViewCodeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A53527B5D29900D6C748 /* ViewCodeConfiguration.swift */; };
+		9113A5A127BA139000D6C748 /* EarthquakeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113A57D27B6D4C900D6C748 /* EarthquakeTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9113A50E27B5D13300D6C748 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9113A4EF27B5D13200D6C748 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9113A4F627B5D13200D6C748;
+			remoteInfo = EarthyWaves;
+		};
+		9113A51827B5D13300D6C748 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9113A4EF27B5D13200D6C748 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9113A4F627B5D13200D6C748;
+			remoteInfo = EarthyWaves;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9113A4F727B5D13200D6C748 /* EarthyWaves.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarthyWaves.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9113A4FA27B5D13200D6C748 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9113A4FC27B5D13200D6C748 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9113A50327B5D13300D6C748 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9113A50627B5D13300D6C748 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9113A50827B5D13300D6C748 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9113A50D27B5D13300D6C748 /* EarthyWavesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthyWavesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9113A51127B5D13300D6C748 /* EarthyWavesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthyWavesTests.swift; sourceTree = "<group>"; };
+		9113A51727B5D13300D6C748 /* EarthyWavesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthyWavesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9113A51B27B5D13300D6C748 /* EarthyWavesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthyWavesUITests.swift; sourceTree = "<group>"; };
+		9113A51D27B5D13300D6C748 /* EarthyWavesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthyWavesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9113A52C27B5D1CA00D6C748 /* EarthquakesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakesViewController.swift; sourceTree = "<group>"; };
+		9113A53127B5D24100D6C748 /* EarthquakesContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakesContract.swift; sourceTree = "<group>"; };
+		9113A53327B5D24C00D6C748 /* EarthquakesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakesPresenter.swift; sourceTree = "<group>"; };
+		9113A53527B5D29900D6C748 /* ViewCodeConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeConfiguration.swift; sourceTree = "<group>"; };
+		9113A53C27B5D3B100D6C748 /* EarthquakesAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakesAPIProtocol.swift; sourceTree = "<group>"; };
+		9113A53F27B5D41C00D6C748 /* EarthquakesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakesResponse.swift; sourceTree = "<group>"; };
+		9113A54227B5D46D00D6C748 /* EarthquakesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakesRouter.swift; sourceTree = "<group>"; };
+		9113A54527B5D4C700D6C748 /* EarthquakesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakesAPI.swift; sourceTree = "<group>"; };
+		9113A54727B5D54400D6C748 /* API+Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Endpoints.swift"; sourceTree = "<group>"; };
+		9113A54927B5D58C00D6C748 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		9113A54D27B5D5F300D6C748 /* InfoPlistHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPlistHelper.swift; sourceTree = "<group>"; };
+		9113A55327B5D66600D6C748 /* Earthquake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Earthquake.swift; sourceTree = "<group>"; };
+		9113A55627B5D84100D6C748 /* EarthyWaves.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = EarthyWaves.xcconfig; sourceTree = "<group>"; };
+		9113A55A27B5D9C200D6C748 /* DataFaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFaker.swift; sourceTree = "<group>"; };
+		9113A55C27B6B6A500D6C748 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		9113A56027B6B75800D6C748 /* URLSessionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProvider.swift; sourceTree = "<group>"; };
+		9113A56627B6B7AB00D6C748 /* EarthquakeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeService.swift; sourceTree = "<group>"; };
+		9113A56827B6BA0C00D6C748 /* ProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderProtocol.swift; sourceTree = "<group>"; };
+		9113A56A27B6BA1700D6C748 /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
+		9113A56C27B6BA2500D6C748 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		9113A56E27B6BA6B00D6C748 /* URLComponentsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLComponentsExtension.swift; sourceTree = "<group>"; };
+		9113A57027B6BA8500D6C748 /* URLRequestExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestExtension.swift; sourceTree = "<group>"; };
+		9113A57227B6BAA100D6C748 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		9113A57427B6BAA900D6C748 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		9113A57627B6BAB100D6C748 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		9113A57827B6BABE00D6C748 /* ParametersEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersEncoding.swift; sourceTree = "<group>"; };
+		9113A57A27B6BAC700D6C748 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		9113A57D27B6D4C900D6C748 /* EarthquakeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeTableViewCell.swift; sourceTree = "<group>"; };
+		9113A58027B72E9100D6C748 /* EarthquakeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeDetailViewController.swift; sourceTree = "<group>"; };
+		9113A58227B72EB300D6C748 /* EarthquakeDetailContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeDetailContract.swift; sourceTree = "<group>"; };
+		9113A58427B72EBF00D6C748 /* EarthquakeDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeDetailPresenter.swift; sourceTree = "<group>"; };
+		9113A58627B89C1A00D6C748 /* EarthquakeTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeTableViewCellTests.swift; sourceTree = "<group>"; };
+		9113A58827B8C67400D6C748 /* LocalizableStrings.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = LocalizableStrings.strings; sourceTree = "<group>"; };
+		9113A58B27B9AD7A00D6C748 /* EarthquakesMockAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakesMockAPI.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9113A4F427B5D13200D6C748 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9113A50A27B5D13300D6C748 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9113A51427B5D13300D6C748 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9113A4EE27B5D13200D6C748 = {
+			isa = PBXGroup;
+			children = (
+				9113A4F927B5D13200D6C748 /* EarthyWaves */,
+				9113A51027B5D13300D6C748 /* EarthyWavesTests */,
+				9113A51A27B5D13300D6C748 /* EarthyWavesUITests */,
+				9113A4F827B5D13200D6C748 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9113A4F827B5D13200D6C748 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9113A4F727B5D13200D6C748 /* EarthyWaves.app */,
+				9113A50D27B5D13300D6C748 /* EarthyWavesTests.xctest */,
+				9113A51727B5D13300D6C748 /* EarthyWavesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9113A4F927B5D13200D6C748 /* EarthyWaves */ = {
+			isa = PBXGroup;
+			children = (
+				9113A4FA27B5D13200D6C748 /* AppDelegate.swift */,
+				9113A50527B5D13300D6C748 /* LaunchScreen.storyboard */,
+				9113A50827B5D13300D6C748 /* Info.plist */,
+				9113A55527B5D71B00D6C748 /* Config */,
+				9113A54B27B5D5E000D6C748 /* Common */,
+				9113A53727B5D30C00D6C748 /* Data */,
+				9113A55E27B6B73C00D6C748 /* Networking */,
+				9113A55227B5D65000D6C748 /* Domain */,
+				9113A52A27B5D15A00D6C748 /* Presentation */,
+			);
+			path = EarthyWaves;
+			sourceTree = "<group>";
+		};
+		9113A51027B5D13300D6C748 /* EarthyWavesTests */ = {
+			isa = PBXGroup;
+			children = (
+				9113A58627B89C1A00D6C748 /* EarthquakeTableViewCellTests.swift */,
+				9113A51127B5D13300D6C748 /* EarthyWavesTests.swift */,
+			);
+			path = EarthyWavesTests;
+			sourceTree = "<group>";
+		};
+		9113A51A27B5D13300D6C748 /* EarthyWavesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9113A51B27B5D13300D6C748 /* EarthyWavesUITests.swift */,
+				9113A51D27B5D13300D6C748 /* EarthyWavesUITestsLaunchTests.swift */,
+			);
+			path = EarthyWavesUITests;
+			sourceTree = "<group>";
+		};
+		9113A52A27B5D15A00D6C748 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				9113A52B27B5D16500D6C748 /* EarthquakesViewController */,
+				9113A57F27B72E7600D6C748 /* EarthquakeDetailViewController */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		9113A52B27B5D16500D6C748 /* EarthquakesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9113A52C27B5D1CA00D6C748 /* EarthquakesViewController.swift */,
+				9113A53127B5D24100D6C748 /* EarthquakesContract.swift */,
+				9113A53327B5D24C00D6C748 /* EarthquakesPresenter.swift */,
+				9113A57C27B6D4BA00D6C748 /* Cell */,
+			);
+			path = EarthquakesViewController;
+			sourceTree = "<group>";
+		};
+		9113A53727B5D30C00D6C748 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9113A53A27B5D34300D6C748 /* Remote */,
+				9113A53927B5D33F00D6C748 /* Local */,
+				9113A53827B5D33A00D6C748 /* Helpers */,
+				9113A55A27B5D9C200D6C748 /* DataFaker.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9113A53827B5D33A00D6C748 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9113A53927B5D33F00D6C748 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				9113A58A27B9AD5D00D6C748 /* Services */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		9113A53A27B5D34300D6C748 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				9113A54427B5D4B400D6C748 /* Services */,
+				9113A54127B5D45F00D6C748 /* Routers */,
+				9113A53E27B5D40100D6C748 /* Responses */,
+				9113A53B27B5D39E00D6C748 /* Protocols */,
+				9113A54727B5D54400D6C748 /* API+Endpoints.swift */,
+				9113A54927B5D58C00D6C748 /* API.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		9113A53B27B5D39E00D6C748 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9113A53C27B5D3B100D6C748 /* EarthquakesAPIProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9113A53E27B5D40100D6C748 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				9113A53F27B5D41C00D6C748 /* EarthquakesResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		9113A54127B5D45F00D6C748 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				9113A54227B5D46D00D6C748 /* EarthquakesRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		9113A54427B5D4B400D6C748 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9113A54527B5D4C700D6C748 /* EarthquakesAPI.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9113A54B27B5D5E000D6C748 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9113A55127B5D63400D6C748 /* ViewCode */,
+				9113A54C27B5D5E500D6C748 /* Helpers */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9113A54C27B5D5E500D6C748 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9113A54D27B5D5F300D6C748 /* InfoPlistHelper.swift */,
+				9113A55C27B6B6A500D6C748 /* DateHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9113A55127B5D63400D6C748 /* ViewCode */ = {
+			isa = PBXGroup;
+			children = (
+				9113A53527B5D29900D6C748 /* ViewCodeConfiguration.swift */,
+			);
+			path = ViewCode;
+			sourceTree = "<group>";
+		};
+		9113A55227B5D65000D6C748 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				9113A55327B5D66600D6C748 /* Earthquake.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		9113A55527B5D71B00D6C748 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				9113A50327B5D13300D6C748 /* Assets.xcassets */,
+				9113A4FC27B5D13200D6C748 /* SceneDelegate.swift */,
+				9113A55627B5D84100D6C748 /* EarthyWaves.xcconfig */,
+				9113A58827B8C67400D6C748 /* LocalizableStrings.strings */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		9113A55E27B6B73C00D6C748 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9113A56527B6B78F00D6C748 /* Services */,
+				9113A56427B6B78900D6C748 /* Protocols */,
+				9113A56327B6B78400D6C748 /* Extensions */,
+				9113A56227B6B78000D6C748 /* Enums */,
+				9113A55F27B6B74600D6C748 /* Provider */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		9113A55F27B6B74600D6C748 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				9113A56027B6B75800D6C748 /* URLSessionProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		9113A56227B6B78000D6C748 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				9113A57227B6BAA100D6C748 /* HTTPMethod.swift */,
+				9113A57427B6BAA900D6C748 /* NetworkError.swift */,
+				9113A57627B6BAB100D6C748 /* NetworkResponse.swift */,
+				9113A57827B6BABE00D6C748 /* ParametersEncoding.swift */,
+				9113A57A27B6BAC700D6C748 /* Task.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		9113A56327B6B78400D6C748 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9113A56E27B6BA6B00D6C748 /* URLComponentsExtension.swift */,
+				9113A57027B6BA8500D6C748 /* URLRequestExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9113A56427B6B78900D6C748 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9113A56827B6BA0C00D6C748 /* ProviderProtocol.swift */,
+				9113A56A27B6BA1700D6C748 /* ServiceProtocol.swift */,
+				9113A56C27B6BA2500D6C748 /* URLSessionProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9113A56527B6B78F00D6C748 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9113A56627B6B7AB00D6C748 /* EarthquakeService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9113A57C27B6D4BA00D6C748 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9113A57D27B6D4C900D6C748 /* EarthquakeTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		9113A57F27B72E7600D6C748 /* EarthquakeDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9113A58027B72E9100D6C748 /* EarthquakeDetailViewController.swift */,
+				9113A58227B72EB300D6C748 /* EarthquakeDetailContract.swift */,
+				9113A58427B72EBF00D6C748 /* EarthquakeDetailPresenter.swift */,
+			);
+			path = EarthquakeDetailViewController;
+			sourceTree = "<group>";
+		};
+		9113A58A27B9AD5D00D6C748 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9113A58B27B9AD7A00D6C748 /* EarthquakesMockAPI.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9113A4F627B5D13200D6C748 /* EarthyWaves */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9113A52127B5D13300D6C748 /* Build configuration list for PBXNativeTarget "EarthyWaves" */;
+			buildPhases = (
+				9113A4F327B5D13200D6C748 /* Sources */,
+				9113A4F427B5D13200D6C748 /* Frameworks */,
+				9113A4F527B5D13200D6C748 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EarthyWaves;
+			packageProductDependencies = (
+			);
+			productName = EarthyWaves;
+			productReference = 9113A4F727B5D13200D6C748 /* EarthyWaves.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9113A50C27B5D13300D6C748 /* EarthyWavesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9113A52427B5D13300D6C748 /* Build configuration list for PBXNativeTarget "EarthyWavesTests" */;
+			buildPhases = (
+				9113A50927B5D13300D6C748 /* Sources */,
+				9113A50A27B5D13300D6C748 /* Frameworks */,
+				9113A50B27B5D13300D6C748 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9113A50F27B5D13300D6C748 /* PBXTargetDependency */,
+			);
+			name = EarthyWavesTests;
+			productName = EarthyWavesTests;
+			productReference = 9113A50D27B5D13300D6C748 /* EarthyWavesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9113A51627B5D13300D6C748 /* EarthyWavesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9113A52727B5D13300D6C748 /* Build configuration list for PBXNativeTarget "EarthyWavesUITests" */;
+			buildPhases = (
+				9113A51327B5D13300D6C748 /* Sources */,
+				9113A51427B5D13300D6C748 /* Frameworks */,
+				9113A51527B5D13300D6C748 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9113A51927B5D13300D6C748 /* PBXTargetDependency */,
+			);
+			name = EarthyWavesUITests;
+			productName = EarthyWavesUITests;
+			productReference = 9113A51727B5D13300D6C748 /* EarthyWavesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9113A4EF27B5D13200D6C748 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					9113A4F627B5D13200D6C748 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					9113A50C27B5D13300D6C748 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 9113A4F627B5D13200D6C748;
+					};
+					9113A51627B5D13300D6C748 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 9113A4F627B5D13200D6C748;
+					};
+				};
+			};
+			buildConfigurationList = 9113A4F227B5D13200D6C748 /* Build configuration list for PBXProject "EarthyWaves" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9113A4EE27B5D13200D6C748;
+			packageReferences = (
+			);
+			productRefGroup = 9113A4F827B5D13200D6C748 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9113A4F627B5D13200D6C748 /* EarthyWaves */,
+				9113A50C27B5D13300D6C748 /* EarthyWavesTests */,
+				9113A51627B5D13300D6C748 /* EarthyWavesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9113A4F527B5D13200D6C748 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9113A50727B5D13300D6C748 /* LaunchScreen.storyboard in Resources */,
+				9113A50427B5D13300D6C748 /* Assets.xcassets in Resources */,
+				9113A58927B8C67400D6C748 /* LocalizableStrings.strings in Resources */,
+				9113A55727B5D84100D6C748 /* EarthyWaves.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9113A50B27B5D13300D6C748 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9113A55827B5D84100D6C748 /* EarthyWaves.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9113A51527B5D13300D6C748 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9113A55927B5D84100D6C748 /* EarthyWaves.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9113A4F327B5D13200D6C748 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9113A56D27B6BA2500D6C748 /* URLSessionProtocol.swift in Sources */,
+				9113A55B27B5D9C200D6C748 /* DataFaker.swift in Sources */,
+				9113A53627B5D29900D6C748 /* ViewCodeConfiguration.swift in Sources */,
+				9113A53D27B5D3B100D6C748 /* EarthquakesAPIProtocol.swift in Sources */,
+				9113A58127B72E9100D6C748 /* EarthquakeDetailViewController.swift in Sources */,
+				9113A54827B5D54400D6C748 /* API+Endpoints.swift in Sources */,
+				9113A56927B6BA0C00D6C748 /* ProviderProtocol.swift in Sources */,
+				9113A56727B6B7AB00D6C748 /* EarthquakeService.swift in Sources */,
+				9113A57927B6BABE00D6C748 /* ParametersEncoding.swift in Sources */,
+				9113A54E27B5D5F300D6C748 /* InfoPlistHelper.swift in Sources */,
+				9113A53227B5D24100D6C748 /* EarthquakesContract.swift in Sources */,
+				9113A4FB27B5D13200D6C748 /* AppDelegate.swift in Sources */,
+				9113A57E27B6D4C900D6C748 /* EarthquakeTableViewCell.swift in Sources */,
+				9113A54027B5D41C00D6C748 /* EarthquakesResponse.swift in Sources */,
+				9113A57B27B6BAC700D6C748 /* Task.swift in Sources */,
+				9113A53427B5D24C00D6C748 /* EarthquakesPresenter.swift in Sources */,
+				9113A58527B72EBF00D6C748 /* EarthquakeDetailPresenter.swift in Sources */,
+				9113A55D27B6B6A500D6C748 /* DateHelper.swift in Sources */,
+				9113A54A27B5D58C00D6C748 /* API.swift in Sources */,
+				9113A55427B5D66600D6C748 /* Earthquake.swift in Sources */,
+				9113A56127B6B75800D6C748 /* URLSessionProvider.swift in Sources */,
+				9113A54627B5D4C700D6C748 /* EarthquakesAPI.swift in Sources */,
+				9113A54327B5D46D00D6C748 /* EarthquakesRouter.swift in Sources */,
+				9113A4FD27B5D13200D6C748 /* SceneDelegate.swift in Sources */,
+				9113A57527B6BAA900D6C748 /* NetworkError.swift in Sources */,
+				9113A52D27B5D1CA00D6C748 /* EarthquakesViewController.swift in Sources */,
+				9113A58327B72EB300D6C748 /* EarthquakeDetailContract.swift in Sources */,
+				9113A57327B6BAA100D6C748 /* HTTPMethod.swift in Sources */,
+				9113A57127B6BA8500D6C748 /* URLRequestExtension.swift in Sources */,
+				9113A56B27B6BA1700D6C748 /* ServiceProtocol.swift in Sources */,
+				9113A56F27B6BA6B00D6C748 /* URLComponentsExtension.swift in Sources */,
+				9113A57727B6BAB100D6C748 /* NetworkResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9113A50927B5D13300D6C748 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9113A5A027BA138D00D6C748 /* ViewCodeConfiguration.swift in Sources */,
+				9113A59627BA128900D6C748 /* Earthquake.swift in Sources */,
+				9113A59B27BA12BE00D6C748 /* DateHelper.swift in Sources */,
+				9113A59727BA12B000D6C748 /* EarthquakesAPIProtocol.swift in Sources */,
+				9113A59227BA126500D6C748 /* EarthquakesMockAPI.swift in Sources */,
+				9113A59527BA127E00D6C748 /* EarthquakesResponse.swift in Sources */,
+				9113A59927BA12B800D6C748 /* DataFaker.swift in Sources */,
+				9113A58727B89C1A00D6C748 /* EarthquakeTableViewCellTests.swift in Sources */,
+				9113A51227B5D13300D6C748 /* EarthyWavesTests.swift in Sources */,
+				9113A59E27BA135E00D6C748 /* EarthquakeTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9113A51327B5D13300D6C748 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9113A59F27BA138C00D6C748 /* ViewCodeConfiguration.swift in Sources */,
+				9113A59327BA127800D6C748 /* Earthquake.swift in Sources */,
+				9113A59A27BA12BD00D6C748 /* DateHelper.swift in Sources */,
+				9113A51E27B5D13300D6C748 /* EarthyWavesUITestsLaunchTests.swift in Sources */,
+				9113A58E27B9AEF300D6C748 /* EarthquakesMockAPI.swift in Sources */,
+				9113A58D27B9AED200D6C748 /* EarthquakesAPIProtocol.swift in Sources */,
+				9113A59D27BA135200D6C748 /* EarthquakeTableViewCellTests.swift in Sources */,
+				9113A59827BA12B500D6C748 /* DataFaker.swift in Sources */,
+				9113A5A127BA139000D6C748 /* EarthquakeTableViewCell.swift in Sources */,
+				9113A51C27B5D13300D6C748 /* EarthyWavesUITests.swift in Sources */,
+				9113A59427BA127E00D6C748 /* EarthquakesResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9113A50F27B5D13300D6C748 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9113A4F627B5D13200D6C748 /* EarthyWaves */;
+			targetProxy = 9113A50E27B5D13300D6C748 /* PBXContainerItemProxy */;
+		};
+		9113A51927B5D13300D6C748 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9113A4F627B5D13200D6C748 /* EarthyWaves */;
+			targetProxy = 9113A51827B5D13300D6C748 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9113A50527B5D13300D6C748 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9113A50627B5D13300D6C748 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9113A51F27B5D13300D6C748 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9113A55627B5D84100D6C748 /* EarthyWaves.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9113A52027B5D13300D6C748 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9113A55627B5D84100D6C748 /* EarthyWaves.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9113A52227B5D13300D6C748 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EarthyWaves/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.geonames.app.EarthyWaves;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9113A52327B5D13300D6C748 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EarthyWaves/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.geonames.app.EarthyWaves;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9113A52527B5D13300D6C748 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jorgehc.EarthyWavesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EarthyWaves.app/EarthyWaves";
+			};
+			name = Debug;
+		};
+		9113A52627B5D13300D6C748 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jorgehc.EarthyWavesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EarthyWaves.app/EarthyWaves";
+			};
+			name = Release;
+		};
+		9113A52827B5D13300D6C748 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jorgehc.EarthyWavesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EarthyWaves;
+			};
+			name = Debug;
+		};
+		9113A52927B5D13300D6C748 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jorgehc.EarthyWavesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EarthyWaves;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9113A4F227B5D13200D6C748 /* Build configuration list for PBXProject "EarthyWaves" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9113A51F27B5D13300D6C748 /* Debug */,
+				9113A52027B5D13300D6C748 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9113A52127B5D13300D6C748 /* Build configuration list for PBXNativeTarget "EarthyWaves" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9113A52227B5D13300D6C748 /* Debug */,
+				9113A52327B5D13300D6C748 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9113A52427B5D13300D6C748 /* Build configuration list for PBXNativeTarget "EarthyWavesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9113A52527B5D13300D6C748 /* Debug */,
+				9113A52627B5D13300D6C748 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9113A52727B5D13300D6C748 /* Build configuration list for PBXNativeTarget "EarthyWavesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9113A52827B5D13300D6C748 /* Debug */,
+				9113A52927B5D13300D6C748 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9113A4EF27B5D13200D6C748 /* Project object */;
+}

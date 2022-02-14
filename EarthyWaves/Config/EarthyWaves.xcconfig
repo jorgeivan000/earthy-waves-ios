@@ -1,0 +1,14 @@
+//
+//  EarthyWaves.xcconfig
+//  EarthyWaves
+//
+//  Created by Jorge Ivan Herrera Camara on 10/02/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+CONFIG_NAME = EarthyWaves
+PRODUCT_BUNDLE_IDENTIFIER = com.geonames.app
+CORE_API_URL = api.geonames.org
+CORE_API_VERSION = v1
+CUSTOM_API_KEY = api.geonames.org/earthquakesJSON?formatted=true&north=44.1&south=-9.9&east=-22.4&west=55.2&username=mkoppelman
